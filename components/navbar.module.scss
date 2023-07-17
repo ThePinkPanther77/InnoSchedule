@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navList{
+    display: flex;
+    column-gap: 75px;
+    list-style: none;
+    *{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    *:visited{
+        color: black;
+    }
+}
+
+.navList:visited{
+    text-decoration: none;
+}
