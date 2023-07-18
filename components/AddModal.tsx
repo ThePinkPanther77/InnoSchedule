@@ -3,12 +3,12 @@ import { Divider, Modal, message } from "antd";
 import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
 import FormItemComponent from "./FormItemComponent";
-import { FormatingDateTime } from "./utils/FormatingDateTime";
+import { FormatingDateTime } from "@/app/utils/FormatingDateTime";
 import dayjs, { Dayjs } from "dayjs";
-import { Event } from "./utils/EventInteerface";
-import { Filtering } from "./utils/FilteringInterface";
-import { FormDataValuesInterface } from "./utils/FormDataValuesInterface";
-import { dataForm } from "./utils/DataForm";
+import { Event } from "@/app/utils/EventInteerface";
+import { Filtering } from "@/app/utils/FilteringInterface";
+import { FormDataValuesInterface } from "@/app/utils/FormDataValuesInterface";
+import { dataForm } from "@/app/utils/DataForm";
 
 interface AddModalProps {
   addModal: boolean;

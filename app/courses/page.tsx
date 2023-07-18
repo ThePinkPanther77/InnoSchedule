@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { message } from "antd";
-import AddModal from "../AddModal";
-import LayoutCourses from "../LayoutCourses";
+import AddModal from "@/components/AddModal";
+import LayoutCourses from "@/components/LayoutCourses";
 
 export default function Courses() {
   useEffect(() => {

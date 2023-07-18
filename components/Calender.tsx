@@ -7,7 +7,7 @@ import { EventClickArg } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import { Event } from "./utils/EventInteerface";
+import { Event } from "@/app/utils/EventInteerface";
 
 interface CalenderProps {
   filterEvents: Event[];

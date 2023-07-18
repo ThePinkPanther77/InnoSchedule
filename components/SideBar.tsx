@@ -1,9 +1,9 @@
 import React from "react";
 import { Menu } from "antd";
-import { Event } from "./utils/EventInteerface";
-import { itemsMenu } from "./utils/ItemMenu";
-import { SelectedItemInterface } from "./utils/SelectedItemItnerface";
-import { Filtering } from "./utils/FilteringInterface";
+import { Event } from "@/app/utils/EventInteerface";
+import { itemsMenu } from "@/app/utils/ItemMenu";
+import { SelectedItemInterface } from "@/app/utils/SelectedItemItnerface";
+import { Filtering } from "@/app/utils/FilteringInterface";
 
 interface SelectedItem {
   key: string;
