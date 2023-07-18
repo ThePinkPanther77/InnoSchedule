@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.event-containier {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+    background-color: #eee;
+    overflow: hidden;
+    padding: 5px;
+    color: #1677ff;
+    .title-event{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        white-space: normal;
+    }
+    .time-event{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+.fc-event {
+    cursor: pointer;
+  }
+  .fc .fc-timegrid-slot  {
+    cursor: pointer;
+  }

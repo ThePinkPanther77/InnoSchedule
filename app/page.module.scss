@@ -1,0 +1,56 @@
+.hero{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        padding: 30px;
+        font-size: 50px;
+    }
+    p{
+        padding: 15px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+    button{
+        padding: 15px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        height: 60px;
+        width: 150px;
+    }
+}
+
+.features{
+    background-color: black;
+    color: white;
+    padding: 50px 100px;
+    ul{
+        padding: 25px 300px;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 200px;
+    }
+}
+
+.use{
+    font-size: 25px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    ul{
+        list-style: none;
+        font-size: 20px;
+        font-weight: 300;
+        *{
+            padding: 10px;
+        }
+    }
+}
