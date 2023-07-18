@@ -10,7 +10,7 @@ export default function navbar() {
         <div>
                 <ul className={styles.navList}>
                     <li><Link href='/'>Home</Link></li>
-                    <li><Link href='/calendar'>Calendar</Link></li>
+                    <li><Link href='/courses'>Calendar</Link></li>
                     <li><Link href='/about'>About</Link></li>
                 </ul>
         </div>
