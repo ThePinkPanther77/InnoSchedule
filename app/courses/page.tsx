@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { message } from "antd";
-import AddModal from "../AddModal";
-import LayoutCourses from "../LayoutCourses";
-
+import AddModal from "@/components/AddModal";
+import LayoutCourses from "@/components/LayoutCourses";
+import { Filtering } from "../utils/FilteringInterface";
+import { Event } from "../utils/EventInteerface";
 export default function Courses() {
   useEffect(() => {
     fetch("https://inno-schedule-bot.onrender.com/get/", {
@@ -16,20 +17,19 @@ export default function Courses() {
       .then((data) => {
         setEvents(data);
       })
-      .catch((err) => {
-        message.error("Network error");
+      .catch((error) => {
+        message.error(error.message);
         setEvents([]);
       });
   }, []);
-  const [filterEvents, setFilterEvents] = useState<any[]>([]);
-  const [course, setCourse] = useState<string>("");
+  const [filterEvents, setFilterEvents] = useState<Event[]>([]);
   const [addModal, setAddModal] = useState<boolean>(false);
-  const [editModal, setEditModal] = useState<boolean>(false);
-  const [newEvent, setNewEvent] = useState<any>({});
   const [date, setDate] = useState<string>("");
-  const [dataEdit, setDataEdit] = useState<any>({});
-  const [events, setEvents] = useState<any[]>([]);
-  const [filtering, setFiltering] = useState<any>({});
+  const [events, setEvents] = useState<Event[]>([]);
+  const [filtering, setFiltering] = useState<Filtering>({
+    type: "",
+    value: "",
+  });
   return (
     <>
       <LayoutCourses
@@ -39,7 +39,6 @@ export default function Courses() {
         filterEvents={filterEvents}
         setAddModal={setAddModal}
         setDate={setDate}
-        setDataEdit={setDataEdit}
       />
       <AddModal
         date={date}

@@ -5,7 +5,7 @@ export const itemsMenu: ItemMenuInterface[] = [
   {
     key: "courses",
     label: "Courses",
-    children: courses.map((course, index) => ({
+    children: courses.map((course) => ({
       key: course,
       label: course,
     })),
