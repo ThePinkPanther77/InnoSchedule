@@ -1,0 +1,22 @@
+name: Vercel Preview Deployment
+env:
+  VERCEL_ORG_ID: v2FJJYi5AOkTGSqLWo6hno0m
+  VERCEL_PROJECT_ID: prj_WewTcarowjCZ2pmoNeeaWAMtrbVW
+  VERCEL_TOKEN: 1lcRWa8BQDLg8ApPvonRZ9nL
+on:
+  push:
+    branches-ignore:
+      - main
+jobs:
+  Deploy-Preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=$VERCEL_TOKEN
+      - name: Build Project Artifacts
+        run: vercel build --token=$VERCEL_TOKEN
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --token=$VERCEL_TOKEN
