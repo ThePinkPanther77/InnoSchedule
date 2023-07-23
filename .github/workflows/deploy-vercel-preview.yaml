@@ -5,7 +5,7 @@ env:
   VERCEL_TOKEN: 1lcRWa8BQDLg8ApPvonRZ9nL
 on:
   workflow_run:
-    workflows: Linter
+    workflows: [Linter]
     types:
       - completed
   push:
