@@ -27,7 +27,7 @@ export default function CoursePage() {
       .catch((err) => {
         message.error(err.message);
       });
-  }, []);
+  }, [searchParams]);
 
   return (
     <div>

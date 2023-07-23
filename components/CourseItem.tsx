@@ -65,7 +65,7 @@ const CourseItem: React.FC<CourseItemProps> = ({ data }) => {
         date: [moment(data.start), moment(data.end)],
       });
     }
-  }, [data]);
+  }, [data, form]);
 
   const handleUpdate = () => {
     form.validateFields().then((values) => {
