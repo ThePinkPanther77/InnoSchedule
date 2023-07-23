@@ -3,14 +3,13 @@ import { Layout, theme, Row, Col } from "antd";
 import SideBar from "./SideBar";
 import Calender from "./Calender";
 const { Content } = Layout;
-import { Event } from "./utils/EventInteerface";
-import { Filtering } from "./utils/FilteringInterface";
+import { Event } from "../app/utils/EventInteerface";
+import { Filtering } from "../app/utils/FilteringInterface";
 
 interface LayoutCoursesProps {
   filterEvents: Event[];
   setDate: (date: string) => void;
   setAddModal: (AddModal: boolean) => void;
-  setDataEdit: (dataEdit: Event) => void;
   events: Event[];
   setFilterEvents: (filterEvents: Event[]) => void;
   setFiltering: (filtering: Filtering) => void;
@@ -19,7 +18,6 @@ interface LayoutCoursesProps {
 const LayoutCourses: React.FC<LayoutCoursesProps> = ({
   setAddModal,
   setDate,
-  setDataEdit,
   filterEvents,
   events,
   setFilterEvents,
@@ -45,7 +43,6 @@ const LayoutCourses: React.FC<LayoutCoursesProps> = ({
               filterEvents={filterEvents}
               setAddModal={setAddModal}
               setDate={setDate}
-              setDataEdit={setDataEdit}
             />
           </Content>
         </Col>
