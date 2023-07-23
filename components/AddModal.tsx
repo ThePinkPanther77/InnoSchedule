@@ -3,19 +3,19 @@ import { Divider, Modal, message } from "antd";
 import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
 import FormItemComponent from "./FormItemComponent";
-import { FormatingDateTime } from "./utils/FormatingDateTime";
+import { FormatingDateTime } from "@/app/utils/FormatingDateTime";
 import dayjs, { Dayjs } from "dayjs";
-import { Event } from "./utils/EventInteerface";
-import { Filtering } from "./utils/FilteringInterface";
-import { FormDataValuesInterface } from "./utils/FormDataValuesInterface";
-import { dataForm } from "./utils/DataForm";
+import { Event } from "@/app/utils/EventInteerface";
+import { Filtering } from "@/app/utils/FilteringInterface";
+import { FormDataValuesInterface } from "@/app/utils/FormDataValuesInterface";
+import { dataForm } from "@/app/utils/DataForm";
 
 interface AddModalProps {
   addModal: boolean;
   setAddModal: (value: boolean) => void;
-  setEvents: (value: [Event]) => void;
+  setEvents: (value: Event[]) => void;
   date: string;
-  setfilterEvents: (value: [Event]) => void;
+  setfilterEvents: (value: Event[]) => void;
   filtering: Filtering;
 }
 
@@ -83,7 +83,7 @@ const AddModal: React.FC<AddModalProps> = ({
             );
           }
         })
-        .catch((err) => message.error("Network error"));
+        .catch((error) => message.error(error.message));
       setAddModal(false);
       form.resetFields();
     });
