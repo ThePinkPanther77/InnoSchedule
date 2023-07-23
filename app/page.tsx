@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styles from "./page.module.scss";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
           Welcome to <span>Inno</span>Schedule - Your Personal Course Planner!
         </h1>
         <p>Organize Your Courses, Never Miss a Class</p>
-        <button>Get Started</button>
+        <Link href='/courses'><button>Get Started</button></Link>
       </section>
       <section className={styles.features}>
         <h1>Features</h1>
@@ -19,7 +19,7 @@ export default function Home() {
             <p>
               Adding your courses to the calendar is a breeze with InnoSchedule.
               Enter essential details like course names, instructors, and
-              schedules effortlessly.
+              schedules effortlessly
             </p>
           </article>
           <article>
@@ -35,7 +35,7 @@ export default function Home() {
             <p>
               Stay up-to-date with real-time updates and reminders. Whether its
               a schedule change or an important announcement, InnoSchedule keeps
-              you informed and prepared.
+              you informed and prepared
             </p>
           </article>
           <article>

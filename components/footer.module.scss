@@ -13,3 +13,11 @@
         gap: 35px;
     }
 }
+
+@media only screen and (max-width: 900px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0; 
+    }
+}

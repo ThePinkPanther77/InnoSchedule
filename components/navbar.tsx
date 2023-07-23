@@ -1,11 +1,20 @@
+"use client";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import menu from "@/public/menu.svg";
+import closeMenu from "@/public/closeMenu.svg";
+import Image from "next/image";
+import { useState } from "react";
 
-export default function navbar() {
+export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
   return (
     <div className={styles.navbar}>
       <div>
-        <p className={styles.title}>Inno Schedule</p>
+        <Link className={styles.title} href="/">
+          Inno Schedule
+        </Link>
       </div>
       <div>
         <ul className={styles.navList}>
@@ -20,6 +29,18 @@ export default function navbar() {
           </li>
         </ul>
       </div>
+{/*         <button
+          className={styles.icon}
+          onClick={() => {
+            setNavbar(!navbar);
+          }}
+        >
+          {navbar ? (
+            <Image src={menu} alt="Harburger menu icon" />
+          ) : (
+            <Image src={closeMenu} alt="Close harburger menu icon" />
+          )}
+        </button> */}
     </div>
   );
 }

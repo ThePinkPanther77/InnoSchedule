@@ -1,4 +1,5 @@
 import styles from "./page.module.scss";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -55,7 +56,9 @@ export default function About() {
           efficient time management. Get started with InnoSchedule now and
           experience the difference it can make in your student journey!
         </p>
-        <button>Get Started</button>
+        <Link href="/courses">
+          <button>Get Started</button>
+        </Link>
       </section>
     </div>
   );
