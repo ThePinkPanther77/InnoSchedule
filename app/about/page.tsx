@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
       <section className={styles.intro}>
-        <h2>Welcome to InnoSchedule - Simplifying Students Lives</h2>
+        <h2>Welcome to <span>Inno</span>Schedule - Simplifying Students Lives</h2>
         <p>
           At InnoSchedule, we understand the daily struggles students face when
           managing their academic schedules. With the belief that every minute
