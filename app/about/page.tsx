@@ -10,10 +10,6 @@ export default function About() {
           At InnoSchedule, we understand the daily struggles students face when
           managing their academic schedules. With the belief that every minute
           counts in a students life, we have developed a powerful yet
-          user-friendly app to simplify the way you plan and organize your
-          courses. InnoSchedule is designed to streamline your academic journey,
-          ensuring you never miss a class and maximize your productivity.
-        </p>
       </section>
       <section className={styles.mission}>
         <h2>Our Mission:</h2>
@@ -24,6 +20,7 @@ export default function About() {
           academic journey, minimizing time wastage, and enhancing productivity.
           Our app is a students companion, ensuring they stay organized and on
           top of their classes throughout their educational pursuits.
+
         </p>
       </section>
       <section className={styles.reason}>

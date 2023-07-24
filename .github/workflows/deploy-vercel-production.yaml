@@ -1,0 +1,26 @@
+name: Vercel Production Deployment
+env:
+  VERCEL_ORG_ID: v2FJJYi5AOkTGSqLWo6hno0m
+  VERCEL_PROJECT_ID: prj_WewTcarowjCZ2pmoNeeaWAMtrbVW
+  VERCEL_TOKEN: 1lcRWa8BQDLg8ApPvonRZ9nL
+on:
+  workflow_run:
+    workflows: [Linter]
+    types:
+      - completed
+  push:
+    branches:
+      - main
+jobs:
+  Deploy-Production:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=$VERCEL_TOKEN
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN

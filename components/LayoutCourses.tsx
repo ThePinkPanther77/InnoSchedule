@@ -6,6 +6,7 @@ const { Content } = Layout;
 import { Event } from "../app/utils/EventInteerface";
 import { Filtering } from "../app/utils/FilteringInterface";
 
+
 interface LayoutCoursesProps {
   filterEvents: Event[];
   setDate: (date: string) => void;
