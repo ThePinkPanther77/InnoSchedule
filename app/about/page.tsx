@@ -1,5 +1,20 @@
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About InnoSchedule - Simplifying Students' Lives",
+  description:
+    "Learn more about InnoSchedule - the app designed by a team of IT students at Innopolis University to simplify students' lives. Discover the key features and mission behind InnoSchedule, and how it empowers students to stay organized and excel in their academic journey.",
+  keywords:
+    "About InnoSchedule, student app, academic planner, course management, timetable organizer, team behind InnoSchedule, student project, Innopolis University",
+  openGraph: {
+    title: "About InnoSchedule - Simplifying Students' Lives",
+    description:
+      "Learn more about InnoSchedule - the app designed by a team of IT students at Innopolis University to simplify students' lives. Discover the key features and mission behind InnoSchedule, and how it empowers students to stay organized and excel in their academic journey",
+    url: "https://inno-schedule-vercel-aruzhanshinbayeva.vercel.app/",
+  },
+};
 
 export default function About() {
   return (

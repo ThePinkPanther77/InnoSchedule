@@ -1,0 +1,87 @@
+{
+    "workbench.colorTheme": "Spinel",
+    "redhat.telemetry.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "bracketPairColorizer.depreciation-notice": false,
+    "[scss]": {
+
+
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.css-language-features",
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.ignoreMissingGitWarning": true,
+    "dart.enableCompletionCommitCharacters": true,
+    "diffEditor.wordWrap": "off",
+    "editor.renderWhitespace": "all",
+    "dart.lineLength": 5000,
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "~/../css"
+      }
+    ],
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "yaml.schemas": {
+      "file:///c%3A/Users/TECHNO%20GATE/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "eslint.run": "onSave",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[vue]": {
+      "editor.defaultFormatter": "Vue.volar"
+    },
+    "files.associations": {
+      "*.tex": "bat"
+    },
+    "[ruby]": {
+      "editor.defaultFormatter": "Shopify.ruby-lsp",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "editor.semanticHighlighting.enabled": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+      120
+    ],
+    "githubPullRequests.createOnPublishBranch": "never",
+    "lldb.suppressUpdateNotifications": true,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "githubPullRequests.pullBranch": "never",
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "explorer.confirmDelete": false,
+    "eslint.timeBudget.onValidation": {
+
+      "warn": 4000,
+      "error": 8000
+    },
+    "atlascode.jira.customJql": [
+
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+
+    }
+}

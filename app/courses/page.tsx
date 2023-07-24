@@ -5,6 +5,8 @@ import AddModal from "@/components/AddModal";
 import LayoutCourses from "@/components/LayoutCourses";
 import { Filtering } from "../utils/FilteringInterface";
 import { Event } from "../utils/EventInteerface";
+
+
 export default function Courses() {
   useEffect(() => {
     fetch("https://inno-schedule-bot.onrender.com/get/", {
