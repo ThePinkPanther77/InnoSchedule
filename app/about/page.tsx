@@ -5,11 +5,11 @@ export default function About() {
   return (
     <div>
       <section className={styles.intro}>
-        <h2>Welcome to <span>Inno</span>Schedule - Simplifying Students Lives</h2>
+        <h2>Welcome to InnoSchedule - Simplifying Students&#180; Lives</h2>
         <p>
           At InnoSchedule, we understand the daily struggles students face when
           managing their academic schedules. With the belief that every minute
-          counts in a students life, we have developed a powerful yet
+          counts in a student&#180;s life, we have developed a powerful yet
           user-friendly app to simplify the way you plan and organize your
           courses. InnoSchedule is designed to streamline your academic journey,
           ensuring you never miss a class and maximize your productivity.
@@ -18,12 +18,13 @@ export default function About() {
       <section className={styles.mission}>
         <h2>Our Mission:</h2>
         <p>
-          At InnoSchedule, our mission is to empower students by providing them
-          with a reliable and intuitive platform for managing their course
-          schedules. We are committed to helping students make the most of their
-          academic journey, minimizing time wastage, and enhancing productivity.
-          Our app is a students companion, ensuring they stay organized and on
-          top of their classes throughout their educational pursuits.
+          At InnoSchedule, our mission is to empower students by
+          providing them with a reliable and intuitive platform for managing
+          their course schedules. We are committed to helping students make the
+          most of their academic journey, minimizing time wastage, and enhancing
+          productivity. Our app is a student&#180;s companion, ensuring they stay
+          organized and on top of their classes throughout their educational
+          pursuits.
         </p>
       </section>
       <section className={styles.reason}>
@@ -32,7 +33,7 @@ export default function About() {
           While traditional methods like using Google Sheets can be useful
           initially, they fall short when it comes to long-term, sustainable
           solutions for students. InnoSchedule is purpose-built for academic
-          scheduling, offering specialized features that cater to students
+          scheduling, offering specialized features that cater to students&#180;
           needs. With real-time updates, intuitive editing, and seamless
           integration, InnoSchedule ensures that you have an organized and
           efficient schedule that adapts to your academic journey.
