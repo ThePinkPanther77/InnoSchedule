@@ -20,8 +20,8 @@ export default function CoursePage() {
         setEvent(
           data.filter(
             (item: Event) =>
-              item.extendedProps.id === Number(searchParams.get("id"))
-          )
+              item.extendedProps.id === Number(searchParams.get("id")),
+          ),
         );
       })
       .catch((err) => {
