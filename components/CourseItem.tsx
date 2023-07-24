@@ -99,7 +99,7 @@ const CourseItem: React.FC<CourseItemProps> = ({ data }) => {
     });
   };
   return (
-    <Form form={form}>
+    <Form form={form} className="form-item">
       {dataForm.map((item) => {
         if (item.name === "group" && data && !data.extendedProps.group) {
           return;

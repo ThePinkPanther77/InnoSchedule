@@ -51,7 +51,7 @@ const Calender: React.FC<CalenderProps> = ({
         center: "title",
         right: "dayGridMonth,timeGridWeek,timeGridDay",
       }}
-      initialView="dayGridMonth"
+      initialView="timeGridDay"
       events={filterEvents}
       eventContent={eventContent}
       dateClick={handleOnDateClick}
