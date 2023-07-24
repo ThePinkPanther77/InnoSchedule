@@ -8,4 +8,6 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Run linter
-        run: npm run lint & npm run format
+        run: npm run lint
+      - name: Run format checking
+        run: npm run check
