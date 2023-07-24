@@ -9,7 +9,9 @@ export default function Home() {
           Welcome to <span>Inno</span>Schedule - Your Personal Course Planner!
         </h1>
         <p>Organize Your Courses, Never Miss a Class</p>
-        <Link href='/courses'><button>Get Started</button></Link>
+        <Link href="/courses">
+          <button>Get Started</button>
+        </Link>
       </section>
       <section className={styles.features}>
         <h1>Features</h1>
