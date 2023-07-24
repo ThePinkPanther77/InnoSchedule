@@ -9,7 +9,9 @@ export default function footer() {
     <footer className={styles.footer}>
       <Image src={logo} alt="app logo" />
       <div>
-        <Link href="https://github.com/ThePinkPanther77/InnoSchedule"><Image src={github} alt="github logo" width='50' height='50'/></Link>
+        <Link href="https://github.com/ThePinkPanther77/InnoSchedule">
+          <Image src={github} alt="github logo" width="50" height="50" />
+        </Link>
       </div>
     </footer>
   );
