@@ -3,7 +3,7 @@ import { Form, Button, message } from "antd";
 import { useForm } from "antd/lib/form/Form";
 import FormItemComponent from "./FormItemComponent";
 import moment from "moment";
-import dayjs, { Dayjs } from "dayjs";
+import { Dayjs } from "dayjs";
 import { dataForm } from "@/app/utils/DataForm";
 import { Event } from "@/app/utils/EventInteerface";
 

@@ -1,8 +1,8 @@
 export interface FormDataValuesInterface {
   title: string;
-  room: Number;
+  room: number;
   instructorName: string;
-  group: String;
+  group: string;
   date: [string, string];
   course: string;
 }

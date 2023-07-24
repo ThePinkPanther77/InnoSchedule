@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { TimePicker } from "antd";
-import dayjs, { Dayjs } from "dayjs";
+import { Dayjs } from "dayjs";
 
 const { RangePicker } = TimePicker;
 

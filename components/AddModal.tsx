@@ -4,7 +4,7 @@ import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
 import FormItemComponent from "./FormItemComponent";
 import { FormatingDateTime } from "@/app/utils/FormatingDateTime";
-import dayjs, { Dayjs } from "dayjs";
+import { Dayjs } from "dayjs";
 import { Event } from "@/app/utils/EventInteerface";
 import { Filtering } from "@/app/utils/FilteringInterface";
 import { FormDataValuesInterface } from "@/app/utils/FormDataValuesInterface";

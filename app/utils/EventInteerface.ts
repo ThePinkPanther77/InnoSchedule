@@ -7,6 +7,6 @@ export interface Event {
     group?: string;
     course: string;
     instructorName: string;
-    id?: Number;
+    id?: number;
   };
 }
