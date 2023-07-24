@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className={styles.navbar}>
       <div>
         <Link className={styles.title} href="/">
-          Inno Schedule
+          InnoSchedule
         </Link>
       </div>
       <div>
