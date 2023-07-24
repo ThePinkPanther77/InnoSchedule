@@ -1,11 +1,28 @@
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About InnoSchedule - Simplifying Students' Lives",
+  description:
+    "Learn more about InnoSchedule - the app designed by a team of IT students at Innopolis University to simplify students' lives. Discover the key features and mission behind InnoSchedule, and how it empowers students to stay organized and excel in their academic journey.",
+  keywords:
+    "About InnoSchedule, student app, academic planner, course management, timetable organizer, team behind InnoSchedule, student project, Innopolis University",
+  openGraph: {
+    title: "About InnoSchedule - Simplifying Students' Lives",
+    description:
+      "Learn more about InnoSchedule - the app designed by a team of IT students at Innopolis University to simplify students' lives. Discover the key features and mission behind InnoSchedule, and how it empowers students to stay organized and excel in their academic journey",
+    url: "https://inno-schedule-vercel-jsbjgrg4b-aruzhanshinbayeva.vercel.app/about",
+  },
+};
 
 export default function About() {
   return (
     <div>
       <section className={styles.intro}>
-        <h2>Welcome to InnoSchedule - Simplifying Students&#180; Lives</h2>
+        <h2>
+          Welcome to <span>Inno</span>Schedule - Simplifying Students Lives
+        </h2>
         <p>
           At InnoSchedule, we understand the daily struggles students face when
           managing their academic schedules. With the belief that every minute

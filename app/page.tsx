@@ -1,6 +1,20 @@
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "InnoSchedule - Your Personal Course Planner",
+  description:
+    "Organize your courses and stay on top of your academic schedule with InnoSchedule - the ultimate course planner for students at Innopolis University. Never miss a class and make the most of your academic journey.",
+  keywords:
+    "InnoSchedule, course planner, academic schedule, student app, timetable management, Innopolis University",
+  openGraph: {
+    title: "InnoSchedule - Your Personal Course Planner",
+    description:
+      "Organize your courses and stay on top of your academic schedule with InnoSchedule - the ultimate course planner for students at Innopolis University. Never miss a class and make the most of your academic journey.",
+    url: "https://inno-schedule-vercel-jsbjgrg4b-aruzhanshinbayeva.vercel.app/",
+  },
+};
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -9,7 +23,9 @@ export default function Home() {
           Welcome to <span>Inno</span>Schedule - Your Personal Course Planner!
         </h1>
         <p>Organize Your Courses, Never Miss a Class</p>
-        <Link href='/courses'><button>Get Started</button></Link>
+        <Link href="/courses">
+          <button>Get Started</button>
+        </Link>
       </section>
       <section className={styles.features}>
         <h1>Features</h1>
