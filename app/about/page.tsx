@@ -5,11 +5,14 @@ export default function About() {
   return (
     <div>
       <section className={styles.intro}>
-        <h2>Welcome to <span>Inno</span>Schedule - Simplifying Students Lives</h2>
+        <h2>
+          Welcome to <span>Inno</span>Schedule - Simplifying Students Lives
+        </h2>
         <p>
           At InnoSchedule, we understand the daily struggles students face when
           managing their academic schedules. With the belief that every minute
           counts in a students life, we have developed a powerful yet
+        </p>
       </section>
       <section className={styles.mission}>
         <h2>Our Mission:</h2>
@@ -20,7 +23,6 @@ export default function About() {
           academic journey, minimizing time wastage, and enhancing productivity.
           Our app is a students companion, ensuring they stay organized and on
           top of their classes throughout their educational pursuits.
-
         </p>
       </section>
       <section className={styles.reason}>
