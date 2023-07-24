@@ -4,10 +4,6 @@ env:
   VERCEL_PROJECT_ID: prj_WewTcarowjCZ2pmoNeeaWAMtrbVW
   VERCEL_TOKEN: 1lcRWa8BQDLg8ApPvonRZ9nL
 on:
-  workflow_run:
-    workflows: [Linter]
-    types:
-      - completed
   push:
     branches:
       - main
