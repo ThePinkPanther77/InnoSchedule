@@ -5,11 +5,6 @@ import { itemsMenu } from "@/app/utils/ItemMenu";
 import { SelectedItemInterface } from "@/app/utils/SelectedItemItnerface";
 import { Filtering } from "@/app/utils/FilteringInterface";
 
-interface SelectedItem {
-  key: string;
-  keyPath: string[];
-}
-
 interface SideBarProps {
   events: Event[];
   setFilterEvents: (filterEvents: Event[]) => void;

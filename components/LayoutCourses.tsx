@@ -3,14 +3,14 @@ import { Layout, theme, Row, Col } from "antd";
 import SideBar from "./SideBar";
 import Calender from "./Calender";
 const { Content } = Layout;
-import { Event } from "@app/utils/EventInteerface";
-import { Filtering } from "@app/utils/FilteringInterface";
+import { Event } from "../app/utils/EventInteerface";
+import { Filtering } from "../app/utils/FilteringInterface";
+
 
 interface LayoutCoursesProps {
   filterEvents: Event[];
   setDate: (date: string) => void;
   setAddModal: (AddModal: boolean) => void;
-  setDataEdit: (dataEdit: Event) => void;
   events: Event[];
   setFilterEvents: (filterEvents: Event[]) => void;
   setFiltering: (filtering: Filtering) => void;
@@ -19,7 +19,6 @@ interface LayoutCoursesProps {
 const LayoutCourses: React.FC<LayoutCoursesProps> = ({
   setAddModal,
   setDate,
-  setDataEdit,
   filterEvents,
   events,
   setFilterEvents,
@@ -32,20 +31,19 @@ const LayoutCourses: React.FC<LayoutCoursesProps> = ({
   return (
     <Layout style={{ padding: "24px 0", background: colorBgContainer }}>
       <Row>
-        <Col xs={24} sm={24} md={6} lg={6} xl={6}>
+        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
           <SideBar
             setFiltering={setFiltering}
             events={events}
             setFilterEvents={setFilterEvents}
           />
         </Col>
-        <Col xs={24} sm={24} md={18} lg={18} xl={18}>
-          <Content style={{ padding: "0 24px", minHeight: 280 }}>
+        <Col xs={24} sm={24} md={24} lg={24} xl={24} className="sidebar-col">
+          <Content style={{ padding: "0 24px",width:"100%" }}>
             <Calender
               filterEvents={filterEvents}
               setAddModal={setAddModal}
               setDate={setDate}
-              setDataEdit={setDataEdit}
             />
           </Content>
         </Col>

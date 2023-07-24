@@ -13,9 +13,9 @@ import { dataForm } from "@/app/utils/DataForm";
 interface AddModalProps {
   addModal: boolean;
   setAddModal: (value: boolean) => void;
-  setEvents: (value: [Event]) => void;
+  setEvents: (value: Event[]) => void;
   date: string;
-  setfilterEvents: (value: [Event]) => void;
+  setfilterEvents: (value: Event[]) => void;
   filtering: Filtering;
 }
 
@@ -83,7 +83,7 @@ const AddModal: React.FC<AddModalProps> = ({
             );
           }
         })
-        .catch((err) => message.error("Network error"));
+        .catch((error) => message.error(error.message));
       setAddModal(false);
       form.resetFields();
     });

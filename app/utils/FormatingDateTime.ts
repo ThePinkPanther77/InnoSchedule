@@ -1,6 +1,10 @@
-import moment, { Moment } from "moment";
+import moment from "moment";
 
-export const FormatingDateTime = (val: { date: string; hours: number; minutes: number }): string => {
+export const FormatingDateTime = (val: {
+  date: string;
+  hours: number;
+  minutes: number;
+}): string => {
   const originalDateTime: string = moment(val.date)
     .set({
       hour: val.hours,
@@ -8,6 +12,6 @@ export const FormatingDateTime = (val: { date: string; hours: number; minutes: n
       second: 0,
       millisecond: 0,
     })
-    .format("YYYY-MM-DDTHH:mm:ss");
+    .format("YYYY-MM-DDTHH:mm");
   return originalDateTime;
 };

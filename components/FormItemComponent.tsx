@@ -2,8 +2,9 @@ import React from "react";
 import { Form, Input, InputNumber, Select } from "antd";
 import DateTimePicker from "./DateTimePicker";
 import { FormItemProps } from "antd/lib/form";
-import { RuleInputInterface } from "@app/utils/RuleInputInterface";
-import { FormDataValuesInterface } from "@app/utils/FormDataValuesInterface";
+import { RuleInputInterface } from "../app/utils/RuleInputInterface";
+import { FormDataValuesInterface } from "../app/utils/FormDataValuesInterface";
+
 
 import dayjs, { Dayjs } from "dayjs";
 

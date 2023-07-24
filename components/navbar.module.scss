@@ -1,14 +1,24 @@
 .navbar{
     display: flex;
-    padding: 0 40px;
+    padding: 0 100px;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 125px;
+    background-color: #3FBA21;
+    text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.3);
 }
 
 .title{
     font-weight: bold;
-    font-size: 32px;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-family: 'Merriweather';
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.title:hover{
+    color:#464646;
 }
 
 .navList{
@@ -17,15 +27,33 @@
     list-style: none;
     *{
         text-decoration: none;
-        color: black;
-        font-size: 15px;
-        font-weight: 500;
+        color: #FFFFFF;
+        font-family: 'Merriweather';
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.7s ease;
     }
     *:visited{
-        color: black;
+        color: #FFFFFF;
+    }
+    *:hover{
+        color:#464646;
     }
 }
 
+.icon{
+    display: none;
+    cursor: pointer;
+}
+
+
 .navList:visited{
     text-decoration: none;
+}
+
+@media only screen and (max-width: 900px){
+    .navbar{
+        flex-direction: column;
+        padding: 10px 0;
+    }
 }
