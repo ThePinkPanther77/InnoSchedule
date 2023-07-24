@@ -7,8 +7,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(false);
-
   return (
     <div className={styles.navbar}>
       <div>
@@ -29,18 +27,6 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-{/*         <button
-          className={styles.icon}
-          onClick={() => {
-            setNavbar(!navbar);
-          }}
-        >
-          {navbar ? (
-            <Image src={menu} alt="Harburger menu icon" />
-          ) : (
-            <Image src={closeMenu} alt="Close harburger menu icon" />
-          )}
-        </button> */}
     </div>
   );
 }
